@@ -256,9 +256,17 @@ ol {
   margin-top: -80px !important;
 }
 
+.bg-primary {
+  background-color: var(--primary-color) !important;
+}
 
+.d-block {
+  display: block !important;
+}
 /* buttons */
-
+.btn {
+  max-height: 40px;
+}
 
 .btn-lg {
   font-size: 18px;
@@ -284,7 +292,7 @@ ol {
   }
 }
 
-.footer {
+.contact {
   position: fixed;
   bottom: 5px;
   width: 300px;
@@ -349,7 +357,7 @@ ol {
 }
 
 .Contact-btn li:focus-within {
-  border: 2px solid green;
+  border: 2px solid var(--primary-color);
 }
 
 .btn i {
@@ -725,7 +733,9 @@ ol {
 }
 
 .mainNav li:focus-within a {
-  border: 2px solid green;
+  border-top: 2px solid var(--primary-color);
+  border-left: 2px solid var(--primary-color);
+  border-right: 2px solid var(--primary-color);
 }
 
 /* hero section  */
@@ -777,8 +787,7 @@ ol {
   height: auto;
   overflow: hidden;
   text-align: center;
-  padding-top: 5%;
-  margin-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 #AboutSection {
@@ -843,12 +852,11 @@ ol {
 }
 
 .services-section {
-  padding: 30px;
+  padding: 100px;
 }
 
 .services-section .section-title {
   margin-top: 70px;
-  margin-bottom: 130px;
 }
 
 .single-progress-item {
@@ -969,15 +977,6 @@ ol {
   font-weight: 700;
 }
 
-/* footer 
-.footer {
-  position: fixed;
-  bottom: 5px;
-  right: -12px;
-  width: 300px;
-} */
-
-
 
 /* ----------------
   Responsive
@@ -998,6 +997,10 @@ ol {
 
   .site-logo {
     margin-left: 20px;
+  }
+
+  .site-logo.logo-header {
+    width: 60px !important;
   }
 
   .main-menu li a {
@@ -1085,7 +1088,7 @@ ol {
     margin-top: -10px;
     font-size: 32px;
     cursor: pointer;
-    color: #FFC61A;
+    color: var(--primary-color);
     margin-right: 10px;
   }
 
@@ -1136,21 +1139,13 @@ ol {
     margin-bottom: 30px;
   }
 
-  .footer-section {
-    padding-bottom: 50px;
-  }
-
-  .footer-widget {
-    margin-bottom: 40px;
-  }
-
   .hero-content h1 {
     font-size: 50px;
     margin-bottom: 30px;
   }
 
   .footer {
-    text-align: center;
+    background: var(--primary-color) !important;
   }
 
   .footer-menu,
@@ -1195,8 +1190,13 @@ ol {
     font-size: 40px;
   }
 
-  .site-logo {
+  .site-logo.logo-header{
     margin-left: 15px;
+    width: 80px !important;
+  }
+  .site-logo{
+    margin-left: 0;
+
   }
 
   .section-title h2 {
